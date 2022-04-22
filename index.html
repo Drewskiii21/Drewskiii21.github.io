@@ -1,50 +1,326 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-    background: lightgreen;
-    font-family: Verdana;
-}  
-#content {
-    background: lightyellow;
-    min-width: 200px;
-    max-width: 500px;
-    padding: 50px;
-    margin: auto;
-    margin-top: -50px;
-    line-height: 150%;
-}
-h1 {
-    letter-spacing: 2px;
-    font-size: 16px;
-    text-align: center;
-}
-h2 {
-    font-size: 14px;
-    text-align: center;
-}
-h3 {
-    font-size: 12px;
-}
-</style>
-</head>    
-<body>
-    <div id="content">
-        <h1>Andrew Lamansky</h1>
-        <h2>Freshman in Greenville, South Carolina</h2>
-        
-         <p>I am a freshman at Bob Jones University studying biblical studies with a minor in greek.</p>
-         <p>
-            I enjoy playing sports for my society.  I play basketball, ultimate frisbee, and soccer for my society.  I am in the society of the Chi Alpha Pi Cavaliers.
-         </p> 
-         <p>
-            I also enjoy hanging out with friends and learning new hobbies.
-         </p>
-        
-        <h3>EDUCATION</h3>
-        Computer Science<br>
-        Bob Jones University
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">Digital Literacy</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Spring</a><a class="nav-link" href="#about"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">2022</a><a class="nav-link" href="#team"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('assets/img/header-bg.jpg');">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><span>Andrew Lamansky</span></div>
+                <div class="intro-heading text-uppercase"><span>Good morning BJU</span></div><a class="btn btn-primary btn-xl text-uppercase" role="button" href="#services">More about me!</a>
+            </div>
+        </div>
+    </header>
+    <section id="services" style="border-width: 4px;border-style: solid;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Education</h2>
+                    <h3 class="text-muted section-subheading">I am a freshman at Bob Jones University</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4"><span class="fa-stack fa-4x" style="background: url(&quot;https://schoolwires.henry.k12.ga.us/cms/lib/GA01000549/Centricity/Domain/5114/Class%20of%202025%20image.jpg&quot;) center / contain;border-width: 4px;border-style: solid;"></span>
+                    <h4 class="section-heading">Graduating class</h4>
+                    <p class="text-muted">Class of 2025</p>
+                </div>
+                <div class="col-md-4"><span class="fa-stack fa-4x" style="background: url(&quot;data:image/png;base64,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&quot;) center / cover;"></span>
+                    <h4 class="section-heading">Society</h4>
+                    <p class="text-muted">I am in the Chi Alpha Pi Cavaliers</p>
+                </div>
+                <div class="col-md-4"><span class="fa-stack fa-4x" style="background: url(&quot;https://www.diplomasandtranscripts.com/uploads/1/2/4/6/124600400/fake-college-diploma-template-6-4_2_orig.jpg&quot;) center / cover;border-width: 4px;border-style: solid;"></span>
+                    <h4 class="section-heading">Major/Minor</h4>
+                    <p class="text-muted">I am a Biblical Studies major and a Greek minor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">All about me</h2>
+                    <h3 class="text-muted section-subheading"></h3>
+                </div>
+            </div>
+            <div class="row" style="height: 228.797px;width: 1130px;">
+                <div class="col-sm-6 col-md-4 portfolio-item" style="background: url(&quot;https://media.npr.org/assets/img/2020/06/10/gettyimages-200199027-001_wide-3ff0f063a2bf1ab01550d3508c816bc43009d215.jpg?s=1400&quot;) center / cover;height: 250.797px;"><a class="portfolio-link" href="#portfolioModal1" data-bs-toggle="modal"></a>
+                    <div class="portfolio-caption" style="height: 74.797px;">
+                        <h4 style="height: 19.7969px;width: 313.656px;">Sports</h4>
+                        <p class="text-muted" style="height: 63px;">Ultimate frisbee, disc golf, basketball</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item" style="background: url(&quot;data:image/jpeg;base64,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&quot;);"><a class="portfolio-link" href="#portfolioModal2" data-bs-toggle="modal"></a>
+                    <div class="portfolio-caption" style="height: 77.797px;">
+                        <h4>Social Life</h4>
+                        <p class="text-muted">Friends and Family</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item" style="background: url(&quot;https://greenvillejournal.com/wp-content/uploads/2020/10/Bob-Jones-sign.jpg&quot;) center / cover;height: 250.797px;"><a class="portfolio-link" href="#portfolioModal3" data-bs-toggle="modal"></a>
+                    <div class="portfolio-caption" style="height: 77.797px;">
+                        <h4>College</h4>
+                        <p class="text-muted">Bob Jones University</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal5" data-bs-toggle="modal"></a></div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase">Life timeline</h2>
+                    <h3 class="text-muted section-subheading"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-group timeline">
+                        <li class="list-group-item">
+                            <div class="timeline-image" style="background: url(&quot;https://static.vecteezy.com/system/resources/previews/000/580/411/large_2x/hospital-logo-and-symbols-template-icons-vector.jpg&quot;) center / contain;"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2002</h4>
+                                    <h4 class="subheading">My Birth</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I was born in Green Bay Wisconsin on November 12th, 2002.&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image" style="background: url(&quot;https://images.squarespace-cdn.com/content/v1/586586125016e177a39c00dc/1531420375321-9Q2VW563U44SHJ44L46N/K5+Lowery+and+6th+Grade+Fun+Run+and+Buddy+Reading+11-17-17+%2853%29.JPG?format=1000w&quot;) center / cover;"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2008</h4>
+                                    <h4 class="subheading">The start of Education</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I started kindergarten when I was 5 years old in 2008.&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="timeline-image" style="background: url(&quot;https://m.media-amazon.com/images/I/A1-TWbDp0WL._AC_SL1500_.jpg&quot;) center / cover;"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2021</h4>
+                                    <h4 class="subheading">June 6th&nbsp;</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I graduated from High School in the summer of 2021.&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image" style="background: url(&quot;https://brand.bju.edu/files/2013/07/bruins-logo1.gif&quot;) center / cover;"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2021</h4>
+                                    <h4 class="subheading">August</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I started college at Bob Jones University in August of 2021</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image">
+                                <h4 style="height: 66px;width: 158px;">&nbsp;The Story Continues</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="background-image:url('assets/img/map-image.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Contact ME</h2>
+                    <h3 class="text-muted section-subheading"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3"><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3"><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">ALAMA680@STUDENTS.BJU.EDU</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-           
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/agency.js"></script>
 </body>
+
 </html>
